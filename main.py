@@ -230,7 +230,7 @@ def train_model(learning_rate, steps, batch_size, input_feature="total_rooms"):
     plt.title("Root Mean Squared Error vs. Periods")
     plt.tight_layout()
     plt.plot(root_mean_squared_errors)
-
+    plt.show()
     # Output a table with calibration data.
     calibration_data = pd.DataFrame()
     calibration_data["predictions"] = pd.Series(predictions)
